@@ -1,8 +1,9 @@
 from django.http import JsonResponse
 from django.urls import path
 
-from fitness_api.views import test_response
+from fitness_api.views import get_material, ask_question
 
 urlpatterns = [
-    path('test/', test_response),
+    path('get-material/', get_material),
+    path('ask-question/', ask_question),
 ]
