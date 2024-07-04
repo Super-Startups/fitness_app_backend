@@ -61,7 +61,7 @@ def ask_gpt_with_context(messages, api_key):
     client = OpenAI(api_key=api_key)
 
     completion = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-3.5-turbo",
         messages=messages,
     )
 
