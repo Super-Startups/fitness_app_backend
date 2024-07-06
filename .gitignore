@@ -186,3 +186,5 @@ fabric.properties
 
 ai_utility/constants.py
 uploads/
+
+db.sqlite3
