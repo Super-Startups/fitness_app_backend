@@ -24,7 +24,7 @@ def get_material(request):
 
     coach = models.Trainer.objects.get(pk=request['coach_id'])
     index = load_faiss_index(coach.faiss_index_3_small.path, coach.faiss_meta_3_small.path, models.EMBEDDINGS_MODEL)
-    content = get_message_content(question, index, 2)
+    content = get_message_content(question, index, 1)
 
     answer = content
     response = GetMaterialResponse(answer)
